@@ -28,14 +28,14 @@ function App() {
 
   return (
     <div className="game-container">
-      <h1>Guess the Number</h1>
+      <h1 className='text-3xl'>Guess the Number</h1>
       <input
         type="number"
         value={guess}
         onChange={(e) => setGuess(e.target.value)} 
         placeholder="Enter a number"
       />
-      <button onClick={handleSubmit}>Submit Guess</button>
+      <button onClick={handleSubmit} className='text-xl'>Submit Guess</button>
       <p>{message}</p> 
     </div>
   );
